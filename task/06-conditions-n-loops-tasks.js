@@ -322,7 +322,7 @@ function getDigitalRoot(num) {
 		let temp = num;
 		while (temp != 0) {
 			root += temp % 10;
-			temp /= 10;
+			temp = Math.floor(temp / 10);
 		}
 		num = root;
 	} while(root > 9);
